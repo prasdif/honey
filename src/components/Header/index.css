@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-family: Arial, sans-serif;
+  background-color: #FBF9F6;
+}
+
+/* Reset spacing */
+
+html, body { margin:0; padding:0; }
+
+
+.navbar-container {
+  max-width:1200px;
+  margin:0 auto;
+  padding: 0px 16px;            /* small vertical padding */
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  height: 80px;                /* Navbar height */
+}
+
+.manuka-btn {
+  border: 1px solid black;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 50px;              /* smaller logo area */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mpl {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+  /* keeps proportions */
+
+.logo img.mpl {
+  height: 100%;               /* fills the .logo height */
+  width: auto;
+  display: block;
+  margin: 0;
+  margin-bottom: 50px;
+  object-fit: contain;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  position: relative;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #fbbf24;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.hamburger {
+  display: none; /* hidden on desktop */
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;   /* 👈 Forces it to the left */
+  top: 20px;
+}
+
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  .manuka-btn,
+  .left-links,
+  .right-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 22px;
+    cursor: pointer;
+  } 
+
+  .mpl {
+    width: 110px !important; 
+    height: 71.5px !important; 
+    margin-left: 170px !important; 
+    transform: translateX(-50%);
+  }
+
+
+  .icons {
+    display: show; /* hidden by default */
+  }
+
+  .mobile-menu {
+    background: #fdfcf9;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 14px;
+  }
+ 
+}

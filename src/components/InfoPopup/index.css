@@ -1,0 +1,118 @@
+/* Container */
+.popup-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Trigger button */
+.popup-trigger {
+  background: #dfdfdf;
+  color: #666666;
+  margin-right: 10px;
+  width: 250px;
+  border: none;
+  gap: 8px;
+  padding: 15px;
+  border-radius: 35px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.uno {
+  width: 14.5px;
+
+} 
+
+
+/* Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup box */
+.popup-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+.popup-section {
+  margin-bottom: 20px;
+}
+
+.popup-section p {
+  margin: 0 0 10px 0;
+}
+
+.popup-subtext {
+  color: #666;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Colored tags */
+.color-bars {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.color {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+}
+
+/* UMF colors */
+.umf-10 { background: #f77f00; }
+.umf-15 { background: #f94144; }
+.umf-20 { background: #f72585; }
+.umf-24 { background: #7209b7; }
+.umf-26 { background: #4361ee; }
+.umf-28 { background: #06d6a0; }
+.umf-30 { background: #3a86ff; }
+
+/* MGO colors */
+.mgo-263 { background: #f77f00; }
+.mgo-514 { background: #f94144; }
+.mgo-829 { background: #f72585; }
+.mgo-1122 { background: #7209b7; }
+.mgo-1282 { background: #4361ee; }
+.mgo-1450 { background: #06d6a0; }
+.mgo-1620 { background: #3a86ff; }
+
+/* Close button */
+.popup-close {
+  display: block;
+  margin: 10px auto 0;
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.info-icon {
+  margin-right: 9px;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  fill: #666666;
+}
